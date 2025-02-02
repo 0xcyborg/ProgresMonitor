@@ -38,7 +38,7 @@ def sendMessage(text):
         print(f"Sent To Telegram - Group ID: {GROUPS_IDS[index]}")
       else:
         print(f"Telegram Returned: {response.status_code} - Group ID: {GROUPS_IDS[index]}")
-    sleep(1)
+      sleep(1)
   except Exception as E:
     print("Failed 'sendMessage' Function: ", E)
 
